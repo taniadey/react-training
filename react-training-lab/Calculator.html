@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React-Component</title>
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.min.js"></script>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+      function Calculator() {
+        return (
+            <div>
+                <h1>Calculator</h1>
+                <input type="number" name="" id=""></input>
+                <br></br>
+                <input type="number" name="" id=""></input>
+                <br></br>
+                <button>Add</button>
+                <button>Subtract</button>
+                <button>Multiply</button>
+                <button>Divide</button>
+                <p>[Result]</p>
+            </div>
+        );
+      }
+
+      function Add(){
+        return(
+          <div>
+            <h3>Sum</h3>
+          </div>
+        ) ;
+      }
+      function Subtract(){
+        return(
+          <div>
+            <h3>Difference</h3>
+          </div>
+        ) ;
+      }
+      function Multiply(){
+        return(
+          <div>
+            <h3>Product</h3>
+          </div>
+        ) ;
+      }
+      function Divide(){
+        return(
+          <div>
+            <h3>Div</h3>
+          </div>
+        ) ;
+      }
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(
+        <div>
+          <Calculator />
+          <Add/>
+          <Subtract/>
+          <Multiply/>
+          <Divide/>
+        </div>
+      );
+    </script>
+  </head>
+  <div id="root"></div>
+  </body>
+</html>
